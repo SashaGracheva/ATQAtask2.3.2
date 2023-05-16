@@ -8,7 +8,6 @@ import io.restassured.specification.RequestSpecification;
 import lombok.AllArgsConstructor;
 import lombok.Value;
 
-
 import java.util.Locale;
 
 import static io.restassured.RestAssured.given;
@@ -57,7 +56,7 @@ public class DataGenerator {
         public static RegistrationDto getRegisteredUser(String status) {
             var registeredUser = getUser(status);
             sendRequest(registeredUser);
-            return  registeredUser;
+            return registeredUser;
         }
     }
 
